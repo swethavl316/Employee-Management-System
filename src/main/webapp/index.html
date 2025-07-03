@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Employee Management</title>
+  <style>
+    /* ===== General Styles ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar {
+      background-color: #2f80ed;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .navbar h2 {
+      font-weight: 600;
+    }
+
+    .logout-btn {
+      background: #eb5757;
+      padding: 10px 18px;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      font-weight: 500;
+    }
+
+    .logout-btn:hover {
+      background: #c0392b;
+    }
+
+    /* ===== Dashboard ===== */
+    .dashboard {
+      max-width: 900px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .dashboard h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: #2d3436;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .card-button {
+      background: white;
+      color: #2f80ed;
+      padding: 20px 30px;
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      width: 200px;
+      text-align: center;
+    }
+
+    .card-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+      background-color: #e3f0ff;
+    }
+
+    @media screen and (max-width: 600px) {
+      .card-button {
+        width: 90%;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+  <!-- Optional: Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>Employee Management</h2>
+    <a href="logout.html" class="logout-btn">Logout</a>
+  </nav>
+
+  <div class="dashboard">
+    <h3>Welcome to the Dashboard</h3>
+    <div class="card-container">
+      <a href="add.html" class="card-button">➕ Add Employee</a>
+      <a href="ViewEmployeeServlet" class="card-button">📋 View Employees</a>
+
+    </div>
+  </div>
+
+</body>
+</html>
