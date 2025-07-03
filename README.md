@@ -75,10 +75,6 @@ Ensure that your MySQL database credentials (username and password) used in the 
 * Username: `root`
 * Password: `your_mysql_password`
 
-## Acknowledgements
-
-Original version of the project: Sehnaaz Ibrahim
-Maintained by: Swethavl316
 
 ## License
 
